@@ -15,6 +15,12 @@ function Calculadora() {
         });
     }
 
+    this.capturaTouch = () => {
+        document.addEventListener('touchstart', (e) => {
+            this.realizaConta();
+        })
+    }
+
     this.capturaCliques = () => {
         document.addEventListener('click', (e) => {
             const el = e.target;
